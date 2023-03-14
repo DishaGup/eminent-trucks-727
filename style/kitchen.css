@@ -228,6 +228,91 @@ width: 400px;
 
 }
 
+#header-menu{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    max-width: 375px;
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+    position: fixed;
+    z-index: 100;
+    font-size: 15px;
+    font-weight: 500;
+left:-500px;
+top:0
+
+}
+#cross-sym{
+    background: #222;
+     display: flex;
+  justify-content: space-between;
+   align-items: center;
+    flex-flow: wrap;
+    padding: 0 10px;
+
+}
+#cross-sym i{
+    background: 0 0;
+    border: none;
+    stroke-width: 2px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    width: 2.4em;
+    height: 2.4em;
+    max-width: 48px;
+    max-height: 48px;
+    padding: 15px 0px 0px 20px;
+}
+    #cross-sym span{
+ margin: 0 6px;
+ color: #fff;
+}   
+#header-menu button{
+    background: #fff;
+    border-color: #fff;
+    color: #222;
+    border: 1px solid #666;
+    border-bottom: none;
+    padding: 16px;
+    margin: 0 4px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+ #header-menu button span{
+        max-height: 15px;
+    max-width: 100%;
+    font-weight: 800;
+    font-size: 18px;
+    }
+    #header-menu button span::first-letter{
+        color: red;
+    }
+
+        #header-menu >div:nth-child(3){
+  padding-bottom: 150px;
+        }
+            #header-menu ul li{
+                padding:10px ;
+                border-top: 1px solid #f0efed;
+                overflow: hidden;
+ font-weight: 500;
+            }
+            #header-menu ul li:hover{
+               zoom: 1.05;
+               font-weight: 600;
+            }
+                #header-menu ul{
+     padding-left: 16px;
+                }
+
+
 #head-core-right{
     position: relative;
     display: flex;
@@ -766,13 +851,13 @@ button:hover{
 }
 #nav-media>div{
     box-sizing: border-box;
-    max-width: 1680px;
+   
     margin: 0 auto;
     padding: 0px 20px 10px 0 px;
     display: flex;
     /* display: inline-flex; */
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
    
 }
 #nav-media i{
@@ -780,14 +865,16 @@ button:hover{
     margin: 30px;
 }
 #nav-media-img{
-    position: relative;
-    top: 0;
-    left: 150px;
-    right: -50px;
-   
+   align-items: center;
+    margin-left: 40px;
+    text-align: center;
+   width: 33%;
+   margin-top: 3px;
 }
 #nav-media-img img{
-    width: 50%;
+    width: 100%;
+    background-color: transparent;
+
 }
 #nav-media-user-cart{
     display: flex;
@@ -800,6 +887,7 @@ button:hover{
 
 
 
+
 #media-search{
     width: 100%;
     position: relative;
@@ -807,6 +895,7 @@ button:hover{
     left: 0;
     background-color: #F5F5F5;
     border: 1px solid red;
+    border-radius: 20px;
     height: 1.3cm;
     display: none;
 }
@@ -819,16 +908,17 @@ button:hover{
 
 
 #media-search input{
-    width: 95%;
+    width: 91%;
     margin: auto;
     height: 1cm;
-
-}
-#media-search input::placeholder{
     font-size: larger;
     font-weight: 600;
+}
+#media-search input::placeholder{
+    font-size: large;
+    font-weight: 600;
     margin-left:6px ;
-    
+    padding-left: 20px;
 }
 
 #media-search input:click{
@@ -837,6 +927,7 @@ border: double black;
 #media-search form i{
     font-size: 18px;
     margin: 2mm;
+    width: 5%;
 
 }
 
@@ -1005,14 +1096,11 @@ color: #fff;
 .kitchen-container>div{
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
-  .fa-heart{
-    color: blue;
- size: 37px;
-}
+ 
 
 
 @media (min-width: 200px) and (max-width: 800px) {
-    #nav-media{
+    #nav-media,#media-search{
         display: block;
     }
     #nav-ones,#head-core,#one-nav,#two-nav{

@@ -1,8 +1,68 @@
 
-let logeduser = JSON.parse(localStorage.getItem("loggedUser")) || [];
-console.log(logeduser)
-document.querySelector("#welcome").textContent = logeduser.name;
-// console.log(logeduser.name)
+let logeduse = JSON.parse(localStorage.getItem("loggedUser")) || [];
+//console.log(logeduser)
+document.querySelector("#welcome").textContent = logeduse.name;
+
+let sidemenu=document.getElementById("header-menu")
+let furnitureContainer=document.getElementById("furniture-container")
+ let furnitureContainermouseover=document.getElementById("furniture-container-mouseover")
+ let kitchenContainer=document.getElementById("Kitchen-container")
+ let kitchenContainermouseover=document.getElementById("Kitchen-container-mouseover")
+ let tableContainer=document.getElementById("table-container")
+ let tableContainermouseover=document.getElementById("table-container-mouseover")
+
+
+ let delay5000=function () {
+    setTimeout(() => {
+        Location.reload()
+    }, 5000);
+ }
+function hideheadermenu(){
+    sidemenu.style.left="-500px"
+}
+function showheadermenu(){
+    sidemenu.style.left="0"
+}
+
+
+ kitchenContainermouseover.addEventListener("mouseover",()=>{
+    kitchenContainer.style.display="flex"
+  
+
+})
+kitchenContainer.addEventListener("mouseleave",()=>{
+    kitchenContainer.style.display="none"
+})
+
+tableContainermouseover.addEventListener("mouseover",()=>{
+    tableContainer.style.display="flex"
+  
+
+})
+tableContainer.addEventListener("mouseleave",()=>{
+    tableContainer.style.display="none"
+})
+
+furnitureContainermouseover.addEventListener("mouseover",()=>{
+    furnitureContainer.style.display="flex"
+
+})
+furnitureContainer.addEventListener("mouseleave",()=>{
+    furnitureContainer.style.display="none"
+})
+
+
+
+
+
+
+
+
+
+
+
+
+//cart original functionality
 
 let displaycartcount = document.getElementById("cartcount");
 let cartitem = JSON.parse(localStorage.getItem("Addtocart")) || [];
@@ -30,7 +90,7 @@ function displaycard(out) {
         name.textContent = el.Name;
 
         let price = document.createElement("h5");
-        price.textContent = el.Price;
+        price.textContent = "₹ " + el.Price;
 
         let desc = document.createElement("p");
         desc.textContent = el.Description;
@@ -78,7 +138,7 @@ function displaycard(out) {
         total = total + Number(el.Price);
 
 
-        totalprice.textContent = total;
+        totalprice.textContent = "₹ " + total;
 
 
         card.append(image,name,price,desc, btn1, qtn, btn2, btn3);

@@ -8,7 +8,7 @@ document.querySelector("#welcome").textContent = logeduser.name;
 
 
 logeduser = JSON.parse(localStorage.getItem("loggedUser")) || [];
-console.log(logeduser)
+
 let phonen = logeduser.phoneno
 document.querySelector("#otpNum").textContent = logeduser.phoneno;
 

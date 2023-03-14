@@ -1,98 +1,83 @@
-# eminent-trucks-727
-
-"welcome..."
+# Home Decor 
 
 
- landing page .
+### Home Decor is a online-e-commerce website for customised furnitures. An Collaborative project built and executed in 5 days.
+<br/>
 
- serch bar 
- adding logo wih help canva
- welcomming login user
- wishlist icon
- cart icon
- responsive images
- responsive footer
+## Tools:
 
+<div style='display:flex; gap:10px ' >  <img align="right" src="https://img.shields.io/badge/html5-E34F26?logo=html5&logoColor=white" />
+<img align="right" src="https://img.shields.io/badge/css3-1572B6?logo=css3&logoColor=white" />
+<img align="right" src="https://img.shields.io/badge/bootstrap-563D7C?logo=bootstrap&logoColor=white" />
+<img align="right" src=https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
 
+ </div>  
+<br/>
 
- // furniture page
+## Deployed Link:
+**Main Website:** https://extraordinary-tartufo-1cb77e.netlify.app/
 
- show all product
- adding stick property
- filting with category
- sorting with price
- add to cart button
- add to wishlit buttton
- fotter parts
- show admn adding prodeuct
- add to them in  cart
- add to wishlist this
+---
+<br/>
 
+##  Website:
 
- //kitchen  page
+### Pages
 
- show all product
- adding stick property
- filting with category
- sorting with price
- add to cart button
- add to wishlit buttton
- fotter parts
+* Authentication Page
+* Home Page
+* Product Page
+* Cart Page
+* Wishlist page
+* Admin Page
 
+### Features
 
- //wishlist page
- show all prodect in wishlist
- add them to cart page
- able to remove from wishlist
+* Responsive
+* Search
+* Responsive
+* filtering 
+* Sorting
+* Authentication using local Storage
+* Adding Production
+* Discount
+* Buying, Increase and Decrease Quantity
 
+ <br/>
 
- // cart page
+## Some Glimpses of Website
 
- showing all product
- stick static div in which we can see total of cart and offer part also
- adding product quantity
- decrese product quantity
- remove product from cart
- applying coupen code 
- for 30%
- for 50%
- buy now button 
- after clicking buy now redirecting to login page
+---
 
+### Homepage
+<br/>
 
+<img src='./images/website.gif'  />
 
-// signup page
-one email use at a time noe reuse of same email
-after signup suceesful data store in localstore
-adding mobile number
-crete password
+----
 
+### Wislist Page
+<br/>
 
-// login page 
+<img src='./images/wishlist.png'  />
 
-need to fill email
-need to fill password
+----
 
-// payment page 
-after adding cart details on clicking submit 
-we receive otp
-
-// otp page
-after conform otp you can able to see recipte of your paymet with 
-your payment amount your name
+### Cart Page
+<br/>
 
 
-// admin page
+<img src='./images/addtocart.png'  />
 
-if you are the admin then you get unique otp
-after conform otp
-you get pruduct adding form
-in the form after filling the product details
-on clicking on sumbmit you get a pop up as product added succesfully
-and product is shown in the furniture page
-able to add to wishlist
-able to add to cart page
+----
+
+### Add Product page
+<br/>
+
+<img src='./images/addproduct.png'  />
+
+---
+<br>
 
 
-
-
+<div style='width:50%;margin:auto' > <img src='https://giffiles.alphacoders.com/165/16529.gif'  />  </div>

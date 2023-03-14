@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homeDecor-Cart page</title>
+    <title>homeDecor-Kitchen page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/kitchen.css">
 </head>
@@ -83,17 +83,18 @@
 <!-- nav for mobile screen MEDIAAA  startsss-->
 <div id="nav-media">
   <div>
-<div><i class="fa fa-bars" aria-hidden="true"></i></div>
-<div id="nav-media-img"><img src="https://www.bing.com/images/blob?bcid=Sz1DEV1dmyMFuw" alt=""></div>
+<div><i onclick="showheadermenu()" class="fa fa-bars" aria-hidden="true"></i></div>
+<div id="nav-media-img"><a href="index.html"><img  src="../images/Logocratecompany.png" alt=""/></a></div>
 <div id="nav-media-user-cart"><a href="signin.html"><i style="color: black;"  class="fa fa-user" aria-hidden="true"></i></a><a href="cartpage.html"><i style="color: black;" class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
   </div>
 </div>
 <div id="media-search">
-  <form action="search">
-    
-    <input type="search" oninput="search()" placeholder="What can we help you find?">
+  <form action="/search">
+    <div>
+     <input id="small-search" oninput="searchsmallscreen()" type="search" placeholder="What can we help you find?">
+
         <i class="fa fa-search" aria-hidden="true"></i>
-    
+      </div>
 </form>
 </div>
 
@@ -300,7 +301,9 @@
       <option value="LTH">Lower-higher</option>
       <option value="HTL">Higher-lower</option>
     </select>
-    <h1>😎</h1>
+    <div style="margin: 10px;margin-top: 15px; " >
+      <img src="https://static.vecteezy.com/system/resources/previews/002/725/917/large_2x/woman-avatar-with-shopping-bags-design-free-vector.jpg" />
+    </div>
   </div>
   <div id="div2">
     <div class="kitchen-container">
@@ -451,6 +454,32 @@
 
 
     </footer>
+
+    <div id="header-menu">
+      <div id="cross-sym"><i onclick="hideheadermenu()" class="fa fa-times" aria-hidden="true"></i> <span><a
+            href="cartpage.html">Orders</a></span></div>
+      <div>
+        <button>
+          <span> <a href="index.html"></a> homeDecor</span>
+        </button>
+      </div>
+      <div>
+        <ul>
+          <li  ><a href="furniture.html" style="color: black">Furniture</a></li>
+          <li>Outdoor</li>
+          <li><a href="kitchen.html" style="color: black">kitchen</a>  </li>
+          <li>Decor & Pillows</li>
+          <li>Lighting</li>
+          <li>Window</li>
+          <li>Rugs</li>
+          <li>Bedding & Bath</li>
+          <li style="color: red; text-transform: uppercase;">Became Our Member</li>
+        </ul>
+      </div>
+
+
+    </div>
+
 
  
 

@@ -596,12 +596,14 @@ let displaywishcount = document.getElementById("wishcount");
 
 let  wishListData = JSON.parse(localStorage.getItem("wishlist")) || [];
 let cart  = JSON.parse(localStorage.getItem("Addtocart")) || [];
-
+let furniture =[]
 let fetchedData=async()=>{
     try {
         let res=await fetch(`http://localhost:8080/furniture`)
   let data=await res.json()
+  furniture=data
   displayData(data)
+  
  //console.log(data)
      } catch (error) {
         console.log(error)
@@ -701,13 +703,26 @@ function displayData(data) {
 
 function search() {
     let q = document.querySelector("input").value;
-   
+ 
     let newData = furniture.filter(function (el) {
         return el.Name.toLowerCase().includes(q.toLowerCase());
     });
-
-   // console.log(newData)
+    // let newDatasmall = furniture.filter(function (el) {
+    //     return el.Name.toLowerCase().includes(smallsearch.toLowerCase());
+    // });
+    //console.log(newData)
     displayData(newData);
+    displayData(newDatasmall)
+}
+function searchsmallscreen(){
+    let smallsearch=document.getElementById("small-search").value
+
+    let newDatasmall = furniture.filter(function (el) {
+        
+        return el.Name.toLowerCase().includes(smallsearch.toLowerCase());
+    });
+    
+    displayData(newDatasmall)
 }
 
 
@@ -831,7 +846,7 @@ sorted.addEventListener("change", function (event) {
     let val = document.querySelector("#sort").value;
     //console.log(val)
 
-    if (val == "LTH") {
+    if (val === "LTH") {
         let data1 = furniture.sort(function (a, b) {
             return a.Price - b.Price;
 
@@ -840,16 +855,18 @@ sorted.addEventListener("change", function (event) {
             return a.Price - b.Price;
 
         })
+       
         displayData(data1)
         display(data2)
         
 
 
-    } else if (val == "HTL") {
+    } else if (val === "HTL") {
         let sorteddata = furniture.sort(function (a, b) {
             return b.Price - a.Price;
 
         })
+      
         displayData(sorteddata)
         let sorteddata2 = productsArr.sort(function (a, b) {
             return b.Price - a.Price;
