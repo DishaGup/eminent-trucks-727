@@ -6,10 +6,12 @@
 
 ## Tools:
 
-<div style='display:flex; gap:10px ' >  <img align="right" src="https://img.shields.io/badge/html5-E34F26?logo=html5&logoColor=white" />
-<img align="right" src="https://img.shields.io/badge/css3-1572B6?logo=css3&logoColor=white" />
-<img align="right" src="https://img.shields.io/badge/bootstrap-563D7C?logo=bootstrap&logoColor=white" />
-<img align="right" src=https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+<div style='display:flex; gap:10px;justifyContent:flex-start ' >
+<img align="left" src="https://img.shields.io/badge/html5-E34F26?logo=html5&logoColor=white" />
+<img align="left" src="https://img.shields.io/badge/css3-1572B6?logo=css3&logoColor=white" />
+<img align="left" src="https://img.shields.io/badge/bootstrap-563D7C?logo=bootstrap&logoColor=white" />
+
+<img align="left" src="https://img.shields.io/badge/JavaScript-F7DF1E?&logo=javascript&logoColor=white" />
 
  </div>  
 <br/>
@@ -18,7 +20,6 @@
 **Main Website:** https://extraordinary-tartufo-1cb77e.netlify.app/
 
 ---
-<br/>
 
 ##  Website:
 
@@ -77,7 +78,6 @@
 <img src='./images/addproduct.png'  />
 
 ---
-<br>
+<br/>
 
-
-<div style='width:50%;margin:auto' > <img src='https://giffiles.alphacoders.com/165/16529.gif'  />  </div>
+ <img width='300px' src='https://giffiles.alphacoders.com/165/16529.gif'  />  
